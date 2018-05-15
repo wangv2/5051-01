@@ -6,21 +6,15 @@ using System.Web.Mvc;
 
 namespace _5051.Controllers
 {
-    public class StudentController : Controller
+    public class AdminLoginController : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About(string id=null)
+        public ActionResult About()
         {
-            var myStudentID = "";
-            if (!string.IsNullOrEmpty(id))
-            {
-                myStudentID = id;
-            }
-
             ViewBag.Message = "Your application description page.";
 
             return View();
